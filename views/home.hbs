@@ -1,0 +1,41 @@
+<section id="section1" class="panel">
+    <h1 class="user-panel-heading">
+        Here is my favourite things!
+    </h1>
+
+    <p>
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <h4>Click on a product below to find more about it.</h4>
+
+    <div class="team">
+        <!-- loop through all our team members and put their info on the page -->
+        {{#each product}}<!-- this is like a JS forEach loop -->
+        <div class="user-panel">
+            <img src="images/{{Image}}" alt="fav image" class="p-product">
+            <a href="{{ID}}" class="u-link">
+                See More Info
+            </a>
+
+            <h1>{{Name}}</h1>
+            <h3>{{Genre}}</h3>
+        
+        </div>
+        {{/each}}
+    </div>   
+    </div>
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <span class="close">x</span>
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+        </div>
+
+        <div class="lb-content">
+            <!-- render the database content here -->
+
+        </div>
+    </section>
+</section>
