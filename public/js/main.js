@@ -12,19 +12,19 @@ const myVM = (() => {
                 </ul>`
     }
     
-    function parseUserData(person) {
+    function parseUserData(product) {
         let targetDiv = lightBox.querySelector('.lb-content'),
             targetImg = lightBox.querySelector('img');
 
-        let bioContent = `
-            <p>${person.bio}</p>
+        let proContent = `
+            <p>${product.description}</p>
             <h4>Social Media:</h4>
             <!-- loop thru social media stuff here -->
-            ${renderSocialMedia(person.social)}
+            ${renderSocialMedia(product.social)}
         `;
 
-        targetDiv.innerHTML = bioContent;
-        targetImg.src = person.currentSrc;
+        targetDiv.innerHTML = proContent;
+        targetImg.src = product.currentSrc;
 
         lightBox.classList.add('show-lb');
     };

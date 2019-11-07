@@ -1,21 +1,25 @@
 @import '_vars';
 @import 'modules/_navbar';
-@import 'modules/_users';
+@import 'modules/_product';
 @import 'modules/_lightbox';
 
 body {
     color: $main-color;
     background-color: $body-bg;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3 { color: $heading-color }
+h1, h2, h3{ color: $heading-color; }
+
+.heading {
+    background-color: peachpuff;
+    color: $heading;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
 
 .panel { min-height: 80vh; }
-
-.panel:nth-child(odd) {
-    background-color: salmon;
-    color: white;
-}
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
 
