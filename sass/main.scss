@@ -2,25 +2,40 @@
 @import 'modules/_navbar';
 @import 'modules/_product';
 @import 'modules/_lightbox';
+@import 'modules/_error';
 
 body {
-    color: $main-color;
-    background-color: $body-bg;
+    color: $text-color;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3{ color: $heading-color; }
 
 .heading {
-    background-color: peachpuff;
     color: $heading;
+    font-family: 'Bungee Shade', cursive;
     text-align: center;
     padding: 10px;
     margin: 0 auto;
 }
 
+.user-panel-heading {
+    color: $heading;
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+}
+
 .panel { min-height: 80vh; }
 
-#to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+#to-top { 
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-decoration: none;
+    border: thin solid black;
+    border-radius: 2px;
+    padding: 5px;
+    color: black;
+}
 
 @import 'modules/_footer'
