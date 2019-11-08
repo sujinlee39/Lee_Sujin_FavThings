@@ -17,7 +17,6 @@ const myVM = (() => {
             targetImg = lightBox.querySelector('img');
 
         let proContent = `
-            // <h1>${product.Name}</h1>
             <p>${product.description}</p>
             <h4>Social Media:</h4>
             <!-- loop thru social media stuff here -->
