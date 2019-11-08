@@ -17,6 +17,7 @@ const myVM = (() => {
             targetImg = lightBox.querySelector('img');
 
         let proContent = `
+            // <h1>${product.Name}</h1>
             <p>${product.description}</p>
             <h4>Social Media:</h4>
             <!-- loop thru social media stuff here -->
@@ -33,8 +34,8 @@ const myVM = (() => {
         event.preventDefault();
         //debugger;
         // 1, 2, or 3 depending on which anchor tag you click
-        let url = `/${this.getAttribute('href')}`,
-            currentImg = this.previousElementSibling.getAttribute('src');
+        let url = `/user/${this.getAttribute('href')}`,
+            currentImg = this.firstElementChild.getAttribute('src');
 
 
         // this goes and fetxhes the datbase content (or and API endpoint)
